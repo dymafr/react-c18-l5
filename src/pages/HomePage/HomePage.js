@@ -4,6 +4,7 @@ import Recipe from './components/Recipe/Recipe';
 import Loading from '../../components/Loading/Loading';
 import Search from './components/Search/Search';
 import { useFetchRecipes } from '../../hooks';
+import { updateRecipe as updateR, deleteRecipe as deleteR } from '../../apis';
 
 export default function HomePage() {
   const [filter, setFilter] = useState('');
